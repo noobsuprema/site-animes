@@ -16,7 +16,7 @@
             background-color: #1c1c1c;
             padding: 20px;
             text-align: center;
-            border-bottom: 3px solid #ff5733; 
+            border-bottom: 3px solid #ff5733; /* Laranja vibrante para destaque */
         }
         h1 {
             margin: 0;
@@ -30,8 +30,6 @@
             margin: 0 auto;
         }
         article {
-            display: flex;
-            flex-direction: column;
             background-color: #1c1c1c;
             border-radius: 8px;
             overflow: hidden;
@@ -43,13 +41,20 @@
             transform: scale(1.02);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
         }
+        .article-content {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
         img {
-            width: 100%;
+            width: 300px; /* Ajuste a largura da imagem conforme necessário */
             height: auto;
             display: block;
+            margin: 15px;
         }
-        .content-wrapper {
+        .text-content {
             padding: 15px;
+            flex: 1;
         }
         h3 {
             margin-top: 0;
@@ -69,13 +74,14 @@
             width: 100%;
             border: 2px solid #ff5733;
             border-radius: 8px;
+            margin-top: 10px;
         }
         footer {
             background-color: #1c1c1c;
             color: #aaa;
             text-align: center;
             padding: 15px;
-            border-top: 3px solid #ff5733;
+            border-top: 3px solid #ff5733; /* Laranja vibrante para destaque */
         }
     </style>
 </head>
@@ -90,55 +96,61 @@
 
             <article>
                 <h3>NHK Ni Youkoso</h3>
-                <img src="nhk1.jpg" alt="NHK Ni Youkoso">
-                <div class="content-wrapper">
-                    <p><strong>Sinopse:</strong> A história se centraliza em Tatsuhiro Satou, um jovem de 21 anos, desempregado que abandonou a faculdade. Acreditando fazer parte de uma conspiração, ele leva uma vida de hikikomori, vivendo há anos exclusivamente em seu quarto e sendo sustentado pelos pais.</p>
-                    <p><strong>Personagens Principais:</strong></p>
-                    <ul>
-                        <li>Tatsuhiro Satou</li>
-                        <li>Misaki Nakahara</li>
-                        <li>Kaoru Yamazaki</li>
-                        <li>Hitomi Kashiwa</li>
-                    </ul>
-                    <h4>Assista ao trailer:</h4>
-                    <video src="nhktrailer.mp4" controls></video>
-                    <p><a href="https://cupulatrovao.com.br/analises/nhk-ni-youkoso-e-bom-vale-a-pena-assistir-o-anime-critica/" target="_blank">Saiba mais sobre NHK</a></p>
+                <div class="article-content">
+                    <img src="nhk1.jpg" alt="NHK Ni Youkoso">
+                    <div class="text-content">
+                        <p><strong>Sinopse:</strong> A história se centraliza em Tatsuhiro Satou, um jovem de 21 anos, desempregado que abandonou a faculdade. Acreditando fazer parte de uma conspiração, ele leva uma vida de hikikomori, vivendo há anos exclusivamente em seu quarto e sendo sustentado pelos pais.</p>
+                        <p><strong>Personagens Principais:</strong></p>
+                        <ul>
+                            <li>Tatsuhiro Satou</li>
+                            <li>Misaki Nakahara</li>
+                            <li>Kaoru Yamazaki</li>
+                            <li>Hitomi Kashiwa</li>
+                        </ul>
+                        <h4>Assista ao trailer:</h4>
+                        <video src="nhktrailer.mp4" controls></video>
+                        <p><a href="https://cupulatrovao.com.br/analises/nhk-ni-youkoso-e-bom-vale-a-pena-assistir-o-anime-critica/" target="_blank">Saiba mais sobre NHK</a></p>
+                    </div>
                 </div>
             </article>
 
             <article>
                 <h3>Orange</h3>
-                <img src="orange2.jpg" alt="Orange">
-                <div class="content-wrapper">
-                    <p><strong>Sinopse:</strong> No primeiro dia de aula, Takamiya Naho recebe uma carta misteriosa de si mesma 10 anos no futuro, que a aconselha a não realizar certas ações. Mas ela ignora, os amigos de Naho convidam o novo menino que chega de Tóquio, Kakeru, para sair depois da escola. Mas algo terrível acontece a Kakeru nesse dia.</p>
-                    <p><strong>Personagens Principais:</strong></p>
-                    <ul>
-                        <li>Kakeru Naruse</li>
-                        <li>Naho Takamiya</li>
-                        <li>Hiroto Suwa</li>
-                        <li>Azusa Murasaka</li>
-                    </ul>
-                    <h4>Assista ao trailer:</h4>
-                    <video src="Orange Official Trailer.mp4" controls></video>
-                    <p><a href="https://aminoapps.com/c/exo-brasil/page/item/orange/nQXr_RBtKI8465qYk10MJBerYzngjamd84" target="_blank">Saiba mais sobre Orange</a></p>
+                <div class="article-content">
+                    <img src="orange2.jpg" alt="Orange">
+                    <div class="text-content">
+                        <p><strong>Sinopse:</strong> No primeiro dia de aula, Takamiya Naho recebe uma carta misteriosa de si mesma 10 anos no futuro, que a aconselha a não realizar certas ações. Mas ela ignora, os amigos de Naho convidam o novo menino que chega de Tóquio, Kakeru, para sair depois da escola. Mas algo terrível acontece a Kakeru nesse dia.</p>
+                        <p><strong>Personagens Principais:</strong></p>
+                        <ul>
+                            <li>Kakeru Naruse</li>
+                            <li>Naho Takamiya</li>
+                            <li>Hiroto Suwa</li>
+                            <li>Azusa Murasaka</li>
+                        </ul>
+                        <h4>Assista ao trailer:</h4>
+                        <video src="Orange Official Trailer.mp4" controls></video>
+                        <p><a href="https://aminoapps.com/c/exo-brasil/page/item/orange/nQXr_RBtKI8465qYk10MJBerYzngjamd84" target="_blank">Saiba mais sobre Orange</a></p>
+                    </div>
                 </div>
             </article>
 
             <article>
                 <h3>Attack on Titan</h3>
-                <img src="attack.jpg" alt="Attack on Titan">
-                <div class="content-wrapper">
-                    <p><strong>Sinopse:</strong> Em um mundo devastado por titãs gigantes que devoram seres humanos, a humanidade vive cercada por muralhas. Eren Yeager, junto com seus amigos Mikasa e Armin, luta para proteger a humanidade e descobrir os segredos dos titãs.</p>
-                    <p><strong>Personagens Principais:</strong></p>
-                    <ul>
-                        <li>Eren Yeager</li>
-                        <li>Mikasa Ackerman</li>
-                        <li>Armin Arlert</li>
-                        <li>Levi Ackerman</li>
-                    </ul>
-                    <h4>Assista ao trailer:</h4>
-                    <video src="Attack on Titan Season 1 Trailer.mp4" controls></video>
-                    <p><a href="https://www.legiaodosherois.com.br/2021/shingeki-no-kyojin-ataque-titas-tudo-precisa-saber-titas.html" target="_blank">Saiba mais sobre Attack on Titan</a></p>
+                <div class="article-content">
+                    <img src="attack.jpg" alt="Attack on Titan">
+                    <div class="text-content">
+                        <p><strong>Sinopse:</strong> Em um mundo devastado por titãs gigantes que devoram seres humanos, a humanidade vive cercada por muralhas. Eren Yeager, junto com seus amigos Mikasa e Armin, luta para proteger a humanidade e descobrir os segredos dos titãs.</p>
+                        <p><strong>Personagens Principais:</strong></p>
+                        <ul>
+                            <li>Eren Yeager</li>
+                            <li>Mikasa Ackerman</li>
+                            <li>Armin Arlert</li>
+                            <li>Levi Ackerman</li>
+                        </ul>
+                        <h4>Assista ao trailer:</h4>
+                        <video src="Attack on Titan Season 1 Trailer.mp4" controls></video>
+                        <p><a href="https://www.legiaodosherois.com.br/2021/shingeki-no-kyojin-ataque-titas-tudo-precisa-saber-titas.html" target="_blank">Saiba mais sobre Attack on Titan</a></p>
+                    </div>
                 </div>
             </article>
         </section>

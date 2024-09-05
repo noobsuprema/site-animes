@@ -41,24 +41,26 @@
             transform: scale(1.02);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
         }
+        .article-header {
+            padding: 15px;
+            background-color: #333;
+            color: #ff5733;
+            text-align: center;
+        }
         .article-content {
             display: flex;
-            flex-direction: row;
-            align-items: flex-start;
+            padding: 15px;
         }
-        img {
+        .article-content img {
             width: 300px; /* Ajuste a largura da imagem conforme necessário */
             height: auto;
-            display: block;
-            margin: 15px;
+            margin-right: 15px;
         }
         .text-content {
-            padding: 15px;
             flex: 1;
         }
         h3 {
-            margin-top: 0;
-            color: #ff5733;
+            margin: 0;
         }
         p {
             margin: 10px 0;
@@ -74,7 +76,7 @@
             width: 100%;
             border: 2px solid #ff5733;
             border-radius: 8px;
-            margin-top: 10px;
+            margin: 10px 0;
         }
         footer {
             background-color: #1c1c1c;
@@ -95,7 +97,9 @@
             <h2>Animes Indicados</h2>
 
             <article>
-                <h3>NHK Ni Youkoso</h3>
+                <div class="article-header">
+                    <h3>NHK Ni Youkoso</h3>
+                </div>
                 <div class="article-content">
                     <img src="nhk1.jpg" alt="NHK Ni Youkoso">
                     <div class="text-content">
@@ -107,15 +111,16 @@
                             <li>Kaoru Yamazaki</li>
                             <li>Hitomi Kashiwa</li>
                         </ul>
-                        <h4>Assista ao trailer:</h4>
-                        <video src="nhktrailer.mp4" controls></video>
                         <p><a href="https://cupulatrovao.com.br/analises/nhk-ni-youkoso-e-bom-vale-a-pena-assistir-o-anime-critica/" target="_blank">Saiba mais sobre NHK</a></p>
                     </div>
                 </div>
+                <video src="nhktrailer.mp4" controls></video>
             </article>
 
             <article>
-                <h3>Orange</h3>
+                <div class="article-header">
+                    <h3>Orange</h3>
+                </div>
                 <div class="article-content">
                     <img src="orange2.jpg" alt="Orange">
                     <div class="text-content">
@@ -127,15 +132,16 @@
                             <li>Hiroto Suwa</li>
                             <li>Azusa Murasaka</li>
                         </ul>
-                        <h4>Assista ao trailer:</h4>
-                        <video src="Orange Official Trailer.mp4" controls></video>
                         <p><a href="https://aminoapps.com/c/exo-brasil/page/item/orange/nQXr_RBtKI8465qYk10MJBerYzngjamd84" target="_blank">Saiba mais sobre Orange</a></p>
                     </div>
                 </div>
+                <video src="Orange Official Trailer.mp4" controls></video>
             </article>
 
             <article>
-                <h3>Attack on Titan</h3>
+                <div class="article-header">
+                    <h3>Attack on Titan</h3>
+                </div>
                 <div class="article-content">
                     <img src="attack.jpg" alt="Attack on Titan">
                     <div class="text-content">
@@ -147,11 +153,10 @@
                             <li>Armin Arlert</li>
                             <li>Levi Ackerman</li>
                         </ul>
-                        <h4>Assista ao trailer:</h4>
-                        <video src="Attack on Titan Season 1 Trailer.mp4" controls></video>
                         <p><a href="https://www.legiaodosherois.com.br/2021/shingeki-no-kyojin-ataque-titas-tudo-precisa-saber-titas.html" target="_blank">Saiba mais sobre Attack on Titan</a></p>
                     </div>
                 </div>
+                <video src="Attack on Titan Season 1 Trailer.mp4" controls></video>
             </article>
         </section>
     </main>
